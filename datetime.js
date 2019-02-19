@@ -15,7 +15,7 @@ function displayDate(elementId) {
 	let monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 	let dayName = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 	
-	document.getElementById(elementId).innerHTML = day + " " + monthName[month] + " " + year + ", " + dayName[dayOfWeek];
+	document.getElementById(elementId).innerHTML = day + " " + monthName[month] + " " + year + ", " + dayName[dayOfWeek - 1];
 }
 
 function displayDateTime(timeElement, dateElement) {
