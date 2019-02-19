@@ -28,7 +28,7 @@ img {
 .content {
 	padding: 20px;
 	line-height: 1.5;
-	background: #000000 url("bg.jpg");
+	background: #000000 url("image/bg.jpg");
 	background-size: cover;
 	color: white;
 	font-size: 15px;
