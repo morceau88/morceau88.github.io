@@ -52,8 +52,7 @@ img {
 .footerTxt {
 	color: WhiteSmoke;
 	position: absolute;
-	bottom: 0;
-	padding: 5px;
+	bottom: 0px;
 }
 
 .checkBtn {
