@@ -5,6 +5,7 @@
 img {
 	max-width: 100%;
 	height: auto;
+	padding: 10px;
 }
 
 .gridContainer {
@@ -12,7 +13,7 @@ img {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 110px auto var(--footer-height);
+	grid-template-rows: 120px auto var(--footer-height);
 	grid-template-areas:
 	"grid_navibar"
 	"grid_content"
@@ -21,14 +22,13 @@ img {
 
 .navibar {
 	background: #272727;
-	padding: 0px 0px 0px 0px;
 	grid-area: grid_navibar;
 }
 
 .content {
 	padding: 20px;
 	line-height: 1.5;
-	background: url("bg.jpg");
+	background: #000000 url("bg.jpg");
 	background-size: cover;
 	color: white;
 	font-size: 15px;
@@ -37,23 +37,33 @@ img {
 
 .footer {
 	background: #747474;
-	color: WhiteSmoke;
-	padding: 15px 0px 0px 5px;
 	grid-area: grid_footer;
 }
 
-.main-content {
+.content-head {
+}
+
+.content-main {
 	background: #FF652F;
-	margin: 20px;
+	margin: 40px 20px 20px 20px;
 	max-width: 1000px;
 }
 
-#checkBtn {
-	width: 100px;
+.footerTxt {
+	color: WhiteSmoke;
+	position: absolute;
+	bottom: 0;
+	padding: 5px;
+}
+
+.checkBtn {
+	width: 120px;
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
 }
 
 .checkBtnContainer {
-	padding: 20px 30px 0px 0px;
+	padding: 5px 30px 0px 0px;
 	float: right;
 }
 
@@ -69,10 +79,10 @@ img {
     .checkBtnContainer {
 		width: 100%;
 		height: auto;
-		padding: 70px 0px 0px 0px;
+		padding: 80px 0px 0px 0px;
     }
     
-    #checkBtn {
-      width: 100%;
+    .checkBtn {
+		width: 100%;
     }
 }

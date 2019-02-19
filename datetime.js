@@ -10,9 +10,12 @@ function displayDate(elementId) {
 	let year = today.getFullYear();
 	let month = today.getMonth();
 	let day = today.getDate();
-	let monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	let dayOfWeek = today.getDay();
 	
-	document.getElementById(elementId).innerHTML = day + "-" + monthName[month] + "-" + year;
+	let monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	let dayName = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+	
+	document.getElementById(elementId).innerHTML = day + " " + monthName[month] + " " + year + ", " + dayName[dayOfWeek];
 }
 
 function displayDateTime(timeElement, dateElement) {
